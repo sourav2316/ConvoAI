@@ -12,14 +12,19 @@ const Main = () => {
     resultData,
     setInput,
     input,
+    newChat,
   } = useContext(Conetext);
 
   return (
     <div className="main">
       <div className="nav">
-        <p>ConvoAI</p>
+        <div className="inner">
+          <p>ConvoAI</p>
+          <img src={assets.plus_icon} alt="" onClick={() => newChat()} />
+        </div>
         <img src={assets.user_icon} alt="" />
       </div>
+
       <div className="main-container">
         {!showResult ? (
           <>
