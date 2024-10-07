@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import "./sideBar.css";
 import { assets } from "./../../assets/assets";
 import { Conetext } from "../../context/Context";
-import { RxCross1 } from "react-icons/rx";
 
 const SideBar = () => {
   const [extented, setExtented] = useState(false);
